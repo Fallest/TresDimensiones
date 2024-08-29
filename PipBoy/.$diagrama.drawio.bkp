@@ -1,0 +1,36 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5">
+  <diagram name="Página-1" id="sQt1BkTnoBjVPcXC8FHe">
+    <mxGraphModel dx="393" dy="235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Gh6PR7uWzURlOeTNoXSC-1" value="Arduino nano" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.16666666666666666;" parent="1" vertex="1">
+          <mxGeometry x="200" y="160" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Gh6PR7uWzURlOeTNoXSC-2" value="TX1&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;RX0&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;RST&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;GND&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D2&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D3&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D4&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D5&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D6&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D7&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D8&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D9&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D10&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D11&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;&lt;br style=&quot;font-size: 6px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 6px;&quot;&gt;D12&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=6;" parent="1" vertex="1">
+          <mxGeometry x="200" y="160" width="20" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4Mrrwm515oB7f6x8GqXq-1" value="VIN&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GND&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RST&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5V&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A7&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A6&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A5&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A4&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A3&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A2&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A1&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;A0&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;REF&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3V3&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;D13&lt;/div&gt;" style="text;html=1;align=right;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="20" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4Mrrwm515oB7f6x8GqXq-2" value="4&quot; TFT SPI 480x320&lt;div&gt;Screen&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.25;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4Mrrwm515oB7f6x8GqXq-3" value="T_IRQ&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;T_OUT&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;T_DIN&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;T_CS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;T_CLK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MISO&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;LED&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SCK&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SDI&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;(MOSI)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;D/C&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RST&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;CS&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;GND&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;VCC&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="1">
+          <mxGeometry x="520" y="160" width="30" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4Mrrwm515oB7f6x8GqXq-4" value="SD_SCK&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SD_MISO&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SD_MOSI&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;SD_CS&lt;/div&gt;" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="1">
+          <mxGeometry x="640" y="160" width="40" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="4Mrrwm515oB7f6x8GqXq-5" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="340" width="80" height="40" as="geometry">
+            <mxRectangle x="560" y="360" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4Mrrwm515oB7f6x8GqXq-7" value="J1 must BE jumped" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="80" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
