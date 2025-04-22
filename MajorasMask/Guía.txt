@@ -1,0 +1,82 @@
+Antes de empezar:
+  1- Herramientas: Soldador, pinzas, voltímetro (polímetro), destornillador pequeño plano y de estrella, tijeras o pelacables,
+    un cepillo de dientes usado (o similar), pistola de silicona.
+  2- Materiales: Los del listado, estaño, unos 20 cables de entre 5 y 10 cm, pasta de soldar (importante), 
+    alcohol isopropílico, papel, un poco de pasta térmica, Loctite, silicona, cinta de doble cara.
+  3- Ten el diagrama del circuito frente a ti en todo momento
+
+Notas:
+  1- Recuerda usar pasta de soldar en todas tus soldaduras.
+  2- Cada vez que termines de soldar un elemento, límpia los restos de pasta con alcohol y el cepillo o papel.
+    Los restos de pasta corroen la soldadura y la deterioran en cuestión de pocos meses.
+  3- Si quieres alguna modificación del código avísame (que las luces parpadeen más, que suene de forma aleatoria, etc).
+
+Preparación del arduino:
+  1- Ten instalado Arduino IDE en su última versión.
+  2- Instala la librería PCM de David Mellis (Audio Playback)
+  3- Descarga el código de aquí: https://github.com/Fallest/TresDimensiones/blob/main/MajorasMask/arduino_code/arduino_code.ino
+  4- Abre este código con el IDE (o cópialo)
+  5- Conecta el Arduino Nano con el cable incluido y selecciónalo en el IDE (arriba izq). Si no detecta el tipo de arduino de primeras,
+    búscalo tú e indícalo (Arduino Nano).
+  6- Revisa que el procesador (Tools > Processor) es ATMega328P. Si te da problemas el arduino 
+    (cuando conectes los cables, no funciona como debería), prueba a cambiar el procesador a ATMega328P (Old Bootloader).
+  7- Primero, escribe un programa de prueba en el Arduino para comprobar que funciona: File > Examples > Basic > Blink.
+    Con ese ejemplo subido al arduino, la lucecita que tiene debería parpadear de forma uniforme. Si este código no funciona, 
+    investiga cómo solucionarlo o pregúntame hasta que funcione.
+  8- Sube el código de la Majora al Arduino (el que descargaste/copiaste).
+  9- Arduino preparado.
+
+Preparación de circuitos de transformación.
+  1- La máscara tiene 3 circuitos de transformación de voltaje: uno de 12v a 5v, y tres de 5v a 12v.
+  2- Coge los tres circuitos boost-up, y suelda 1 cable de 5cm a cada uno de los contactos (Vin-, Vin+, Vout-, Vout+) 
+    (Vin = Voltaje de entrada, Vout = voltaje de salida). Recomendable usar un código de colores intuitivo para los cables 
+    (rojo positivo, negro negativo, o similar)
+  3- Coge el circuito boost-down y suelda 1 cable de 5cm a cada uno de los contactos (Vin-, Vin+, Vout-, Vout+).
+  4- Los circuitos boost-up tienen un pequeño tornillo dorado que necesita un destornillador plano. Este es el tornillo de ajuste.
+    Usando un cable USB pelado (con + y - abiertos) conectado a un cabezal para cargar el movil cualquiera, conéctalo a la entrada de cada
+    circuito boost-up (uno a uno) para ajustar el voltaje de salida a 12v exactos. Para ver el voltaje de salida, tendrás que conectar el 
+    voltímetro a la salida del transformador. Si te quedas corto de voltaje, las luces brillarán menos. Si te pasas, podrías provocar 
+    thermal runaway en las LEDs de los ojos, lo que podría llevarlas a autodestruirse.
+  5- Usando la fuente de alimentación de la máscara, conéctala al transformador boost-down, y ajústalo con un destornillador de estrella 
+    para que la salida sea de 5V exactos. Si te equivocas en este voltaje, freirás el arduino.
+  6- Deja preparado cada transformador con sus cuatro cables, bien ordenaditos y limpios de pasta de soldar.
+
+Preparación del circuito de audio
+  1- Coge el PAM8610, el altavoz, y unos 8 cables.
+  2- Suelda 1 cable en 
+    [+12v, GND (alimentación)], 
+    [Lin+, Lin- (entrada de audio)], 
+    [Lout+, Lout- (salida audio)], 
+    y en cada uno de los conectores de SW (switch).
+  3- La alimentación irá directa a la fuente de alimentación sin pasar por ningún transformador.
+  4- Lin- va a un GND del arduino, Lin+ va al puerto 11 del arduino.
+  5- Lout- y Lout+ van al altavoz en cualquier orden.
+  6- En cuanto a SW, uno irá a un GND del arduino y otro irá al puerto 7 del arduino.
+  7- Recuerda limpiar todos los restos de pasta de soldar que haya en la placa y los componentes.
+
+Preparación del circuito de luces
+  1- Coge las LEDs de los ojos, sus dos disipadores, y la tira de LEDs COB.
+  2- Corta la tira de LEDs COB a 1M exacto.
+  3- Pon un poco de pasta térmica en los disipadores, pon las luces LED encima, muévelas un poco para que se extienda la pasta, y
+    pégala con un par de gotas de loctite en cada lado del LED.
+  4- Coge los tres transformadores boost-up que preparaste, y suelda la salida de cada uno a las LEDs (MIRA BIEN + Y -, puedes fundir las luces).
+  5- Conecta las entradas positivas (Vin+) de los boost-up que están conectados a las LEDs de los ojos al puerto 5 del arduino, 
+    y los negativos (Vin-) al GND del arduino.
+  6- Conecta el boost-up de la tira COB al puerto 6 y el negativo a un GND del arduino.
+
+Termina el circuito
+  1- Coge el boost-down, y conecta sus salidas al GND y VIN (positivo) del arduino.
+  2- Corta el cable de la fuente de alimentación, en el lado en el que se vaya a conectar a la máscara, y pon el interruptor eléctrico.
+  3- En la breadboard, conecta la fuente de alimentación en serie con el boostdown del arduino y la alimentación de la PAM8610.
+  4- Conecta la fuente de alimentación y dale energía.
+  5- Si todo funciona bien, recuerda fijar los cables y componentes con silicona y cinta de doble cara, 
+    llegando a usar Loctite si fuera necesario.
+  6- Una vez instalado en la Majora, organiza los cables y recógelos para que el circuito sea fácil de comprobar, limpiar o desmontar si fuera
+    necesario.
+
+
+Troubleshooting  
+  1- Si los ojos brillan poco, revisa el voltaje de salida de su circuito de transformación individual. Recuerda que lo puedes subir un poco (máx 12.5V)
+  2- Si alguna parte no funciona, primero revisa que los cables estén bien conectados. Si con eso no encuentras el problema, ve comprobando
+    los transformadores y los componentes con el voltímetro, y revisa que los cables estén todos con sus pares.
+  3- Si ya no sabes qué hacer, o me llamas o buscas en internet.
